@@ -1,0 +1,6 @@
+.DS_Store
+*.meta
+*.cs.meta
+
+Materials/
+Scenes/
