@@ -2,8 +2,9 @@
 
 public static class MeshGenerator 
 {
-	public static MeshData GenerateTerrainMesh(float[,] heightMap, float heightMultiplier, AnimationCurve heightCurve, int levelOfDetail)
+	public static MeshData GenerateTerrainMesh(float[,] heightMap, float heightMultiplier, AnimationCurve curve, int levelOfDetail)
 	{
+		var heightCurve = new AnimationCurve(curve.keys);
 		var width = heightMap.GetLength(0);
 		var height = heightMap.GetLength(1);
 		var topLeftX = (width - 1) / -2f;
