@@ -14,7 +14,6 @@ public class MapDisplay : MonoBehaviour
 	
 	public void DrawMesh(MeshData meshData, Texture2D texture)
 	{
-		Debug.LogWarning("Drawing mesh...");
 		meshFilter.sharedMesh = meshData.CreateMesh();
 		meshRenderer.sharedMaterial.mainTexture = texture;
 	}
